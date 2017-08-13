@@ -12,12 +12,21 @@
         	<img src="http://placehold.it/368x153" width="368" height="153" alt="Логотип Глейси">
         </a>
         <ul class="site-navigation">
-          <li><a href="catalog.html">Каталог</a></li>
+          <li>
+            <a>Каталог</a>
+            <ul class="catalog-hover">
+              <li class="catalog-item-bold"><a>Новинки</a></li>
+              <li><a href="catalog.html">Сливочное</a></li>
+              <li class="catalog-item-hover"><a>Щербеты</a></li>
+              <li><a>Фруктовый лёд</a></li>
+              <li><a>Мелорин</a></li>
+            </ul>
+          </li>
           <li><a href="delivery.html">Доставка и оплата</a></li>
           <li><a href="about.html">О компании</a></li>
         </ul>
         <ul class="user-navigation">
-          <li class="search"><input type="text" name="search"></li>
+          <li class="search"><label><input type="text" name="search"></label></li>
           <li class="login-link"><a href="about.html">Вход</a></li>
           <li class="cart empty-cart"><a href="cart.html">Пусто</a></li>
         </ul>
@@ -140,5 +149,40 @@
         Сделано в <a href="https://htmlacademy.ru">HTML Academy</a> © 2016
       </p>     
     </footer>
+    <section class="modal modal-login">
+      <h2 class="visually-hidden">Авторизация</h2>
+      <form class="login-form" action="#" method="post">
+        <p>
+          <input class="login-email" type="email" name="e-mail" placeholder="Электронная почта">
+        </p>
+        <p>
+          <input class="login-password" type="password" name="password" placeholder="Пароль">
+        </p>
+        <button class="button" type="submit">Войти</button>
+        <p class="login-password-info">
+          <a class="restore" href="#">Забыли пароль?</a>
+          <a class="register" href="#">Новая регистрация</a>
+        </p>
+      </form>
+    </section>
+    <section class="modal modal-feedback">
+      <h2>Мы обязательно вам ответим!</h2>
+      <p>Введите свой логин и пароль.</p>
+      <form class="feedback-form" action="#" method="post">
+        <p>
+          <input class="user-name" type="text" name="user-name" placeholder="Как вас зовут?">
+        </p>
+        <p>
+          <input class="user-email" type="email" name="user-email" placeholder="Ваша почта для ответа?">
+        </p>
+        <p>
+          <textarea class="user-message" name="user-message" rows="10" cols="10">Напишите что-нибудь...</textarea>
+        </p>
+        <button class="button" type="submit">Войти</button>
+      </form>
+      <span class="modal-close">x</span>
+    </section>
+    
+    
   </body>
 </html>

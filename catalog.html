@@ -19,7 +19,29 @@
         <ul class="user-navigation">
           <li class="search"><input type="text" name="search"></li>
           <li class="login-link"><a href="about.html">Вход</a></li>
-          <li class="cart full-cart"><a href="cart.html">2 товара</a></li>
+          <li class="cart full-cart">
+            <a href="cart.html">2 товара</a>
+            <div class="table-cart">
+              <table>
+                <tr>
+                  <td><span class="cart-delete">x</span></td>
+                  <td><img class="image-cart-item" src="http://placehold.it/30x30" width="30" height="30" alt="Пломбир с апельсиновым джемом"></td>
+                  <td><span class="cart-product-name">Пломбир с апельсиновым джемом</span></td> 
+                  <td><span class="cart-quantity">1.5 кг х</span><span class="cart-price">200 руб.</span></td>
+                  <td><span class="cart-total-price">300 руб.</span></td>              
+                </tr>
+                <tr>
+                  <td><span class="cart-delete">x</span></td>
+                  <td><img class="image-cart-item" src="http://placehold.it/30x30" width="30" height="30" alt="Клубничный пломбир с присыпкой из белого шоколада"></td>
+                  <td><span class="cart-product-name">Клубничный пломбир с присыпкой из белого шоколада</span></td> 
+                  <td><span class="cart-quantity">1.5 кг х</span><span class="cart-price">300 руб.</span></td>
+                  <td><span class="cart-total-price">450 руб.</span></td>              
+                </tr>
+              </table>
+              <p class="cart-sum">Итого: 750 руб.</p>
+              <button class="button" type="submit">Оформить заказ</button>
+            </div>
+          </li>
         </ul>
       </nav>
       <p class="opening-hours">С 10 до 20, ежедневно</p>
@@ -39,7 +61,11 @@
           <fieldset>
             <legend>Сортировка:</legend>
             <select name="sort"> 
-              <option value="По популярности">По популярности</option>
+              <option value="по популярности" class="option-selected">по популярности</option>
+              <option value="по популярности">по популярности</option>
+              <option value="сначала недорогие">сначала недорогие</option>
+              <option value="сначала дорогие">сначала дорогие</option>
+              <option value="по жирности">по жирности</option>
             </select>
           </fieldset>
           <fieldset>
@@ -48,18 +74,18 @@
           </fieldset>
           <fieldset>
             <legend>Жирность:</legend>
-            <span class="radio-input"><input type="radio" name="fat" value="fat1">0%</span>
-            <span class="radio-input"><input type="radio" name="fat" value="fat2" checked="checked">до 10%</span>
-            <span class="radio-input"><input type="radio" name="fat" value="fat3">до 30%</span>
-            <span class="radio-input"><input type="radio" name="fat" value="fat4">выше 30%</span>
-          </fieldset>
+            <label><input type="radio" name="fat" value="fat1">0%</label>
+            <label><input type="radio" name="fat" value="fat2" checked="checked">до 10%</label>
+            <label><input type="radio" name="fat" value="fat3">до 30%</label>
+            <label><input type="radio" name="fat" value="fat4">выше 30%</label>
+          </fieldset>>
           <fieldset>
             <legend>Наполнители:</legend>
-            <span class="checkbox-input"><input type="checkbox" name="content" value="content1" checked="checked">Шоколадные</span>
-            <span class="checkbox-input"><input type="checkbox" name="content" value="content2" checked="checked">Сахарные присыпки</span>
-            <span class="checkbox-input"><input type="checkbox" name="content" value="content3">Фрукты</span>
-            <span class="checkbox-input"><input type="checkbox" name="content" value="content4">Сиропы</span>
-            <span class="checkbox-input"><input type="checkbox" name="content" value="content5">Джемы</span>
+            <label><input type="checkbox" name="content" value="content1" checked="checked">Шоколадные</label>
+            <label><input type="checkbox" name="content" value="content2" checked="checked">Сахарные присыпки</label>
+            <label><input type="checkbox" name="content" value="content3">Фрукты</label>
+            <label><input type="checkbox" name="content" value="content4">Сиропы</label>
+            <label><input type="checkbox" name="content" value="content5">Джемы</label>
           </fieldset>
         </form>
       </section>
