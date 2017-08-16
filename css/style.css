@@ -8,18 +8,21 @@ body {
 	font-size: 16px;
 	color: #323232;
 	line-height: 22px;
+	font-weight: 400;
 }
 
-.product-name {
+.blog-title {
 	font-size: 16px;
-	color: #ffffff;
+	color: #323232;
 	line-height: 22px;
+	font-weight: 500;
 }
 
-h1 {
-	font-size: 35px;
-	color: #ffffff;
-	line-height: 41px;
+.about-us-title {
+	font-size: 24px;
+	color: #323232;
+	line-height: 30px;
+	font-weight: 500;
 }
 
 .slide-input {
