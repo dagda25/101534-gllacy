@@ -45,7 +45,7 @@
 						</li>
 					</ul>
 					<div class="search">
-						<label for="search"></label>
+						<label for="search"><span class="visually-hidden">Поиск</span></label>
 						<div class="modal modal-search">
 							<input type="text" name="search" id="search">
 						</div>
@@ -56,10 +56,12 @@
 							<h2 class="visually-hidden">Авторизация</h2>
 							<form class="login-form" action="#" method="post">
 								<p>
-									<input class="login-email" type="email" name="e-mail" placeholder="Электронная почта">
+									<input class="login-email" type="email" name="e-mail" id="e-mail" placeholder="Электронная почта">
+									<label for="e-mail" class="visually-hidden">Электронная почта</label>
 								</p>
 								<p>
-									<input class="login-password" type="password" name="password" placeholder="Пароль">
+									<input class="login-password" type="password" name="password" id="password" placeholder="Пароль">
+									<label for="password" class="visually-hidden">Пароль</label>
 								</p>
 								<button class="button" type="submit">Войти</button>
 								<p class="login-password-info">
@@ -201,14 +203,15 @@
 						<h2 class="visually-hidden">Рассылка</h2>
 						<p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </p>
 						<form class="newsletter-form" action="#" method="post">
-							<input type="text" name="e-mail" value="" placeholder="Электронная почта">
+							<input type="text" name="e-mail" value="" id="newsletter" placeholder="Электронная почта">
+							<label for="newsletter" class="visually-hidden">Электронная почта</label>
 							<button class="button" type="submit">Отправить</button>
 						</form>
 					</section>
 				</div>
 				<section class="contact">
 					<h2 class="visually-hidden">Контакты</h2>
-					<img src="http://placehold.it/1200x400" width="1200" height="400" alt="Магазин Глейси на карте">
+					<img src="img/map.jpg" width="1200" height="430" alt="Адрес главного офиса и офлайн магазина: ул. Большая Конюшенная 19/8, Санкт-Петербург">
 					<div class="contact">
 						<p>Адрес главного офиса и офлайн магазина:</p>
 						<p>
@@ -227,16 +230,24 @@
 				<div class="footer-social">
 					<ul>
 						<li>
-							<a class="social-button social-button-tw" href="#" title="Твиттер"></a>
+							<a class="social-button social-button-tw" href="#" title="Твиттер">
+								<span class="visually-hidden">Твиттер</span>
+							</a>
 						</li>
 						<li>
-							<a class="social-button social-button-in" href="#" title="Инстаграм"></a>
+							<a class="social-button social-button-in" href="#" title="Инстаграм">
+								<span class="visually-hidden">Инстаграм</span>
+							</a>
 						</li>
 						<li>
-							<a class="social-button social-button-fb" href="#" title="Фейсбук">Фейсбук</a>
+							<a class="social-button social-button-fb" href="#" title="Фейсбук">
+								<span class="visually-hidden">Фейсбук</span>
+							</a>
 						</li>
 						<li>
-							<a class="social-button social-button-vk" href="#" title="Вконтакте">Вконтакте</a>
+							<a class="social-button social-button-vk" href="#" title="Вконтакте">
+								<span class="visually-hidden">Вконтакте</span>
+							</a>
 						</li>
 					</ul>
 				</div>
@@ -266,17 +277,19 @@
 				<p>Введите свой логин и пароль.</p>
 				<form class="feedback-form" action="#" method="post">
 					<p>
-						<input class="user-name" type="text" name="user-name" placeholder="Как вас зовут?">
+						<input class="user-name" type="text" name="user-name" id="user-name" placeholder="Как вас зовут?">
+						<label for="user-name" class="visually-hidden">Как вас зовут?</label>
 					</p>
 					<p>
-						<input class="user-email" type="email" name="user-email" placeholder="Ваша почта для ответа?">
+						<input class="user-email" type="email" name="user-email" id="user-email" placeholder="Ваша почта для ответа?">
+						<label for="user-email" class="visually-hidden">Ваша почта для ответа?</label>
 					</p>
 					<p>
 						<textarea class="user-message" name="user-message" rows="10" cols="10">Напишите что-нибудь...</textarea>
 					</p>
 					<button class="button" type="submit">Войти</button>
 				</form>
-				<span class="modal-close">x</span>
+				<button class="modal-close" type="button">Закрыть</button>
 			</section>  
 		</div> 
 	</body>
