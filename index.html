@@ -3,8 +3,9 @@
 	<head>
 		<meta charset="utf-8">
 		<title>HTML Academy: Глейси</title>
+		<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&amp;subset=cyrillic" rel="stylesheet">
+		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/style.css">
-		<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
 	</head>
 	<body>
 		<input type="radio" name="slider" class="slide-input" id="slide1" checked>
@@ -49,7 +50,7 @@
 							<span class="visually-hidden">Поиск</span>
 						</label>
 						<div class="modal modal-search">
-							<input type="text" name="search" id="search">
+							<input type="text" name="search" id="search" placeholder="Что ищем?">
 						</div>
 					</div>
 					<div class="login-link">
@@ -120,7 +121,7 @@
 					<h2 class="visually-hidden">Хиты продаж</h2>
 					<ul class="bestsellers-list">
 						<li class="bestsellers-items">
-							<p class="bestseller-label">Хит</p>
+							<img class="bestseller-label" src="img/hit.svg" alt="Хит" width="61px" height="61px">
 							<div class="image-price">
 							<a href="#" title="Сливочное с апельсиновым джемом и цитрусовой стружкой">
 								<img class="bestseller-item" src="img/product1.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
@@ -134,7 +135,7 @@
 							</h3>
 						</li>
 						<li class="bestsellers-items">
-							<p class="bestseller-label">Хит</p>
+							<img class="bestseller-label" src="img/hit.svg" alt="Хит" width="61px" height="61px">
 							<div class="image-price">
 								<a href="#" title="Сливочно-кофейное с кусочками шоколада">
 									<img class="bestseller-item" src="img/product2.jpg" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
@@ -148,7 +149,7 @@
 							</h3>
 						</li>
 						<li class="bestsellers-items">
-							<p class="bestseller-label">Хит</p>
+							<img class="bestseller-label" src="img/hit.svg" alt="Хит" width="61px" height="61px">
 							<div class="image-price">
 								<a href="#" title="Сливочно-клубничное с присыпкой из белого шоколада">
 									<img class="bestseller-item" src="img/product3.jpg" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
@@ -162,7 +163,7 @@
 							</h3>
 						</li>
 						<li class="bestsellers-items">
-							<p class="bestseller-label">Хит</p>
+							<img class="bestseller-label" src="img/hit.svg" alt="Хит" width="61px" height="61px">
 							<div class="image-price">
 								<a href="#" title="Сливочное крем-брюле с карамельной подливкой">
 									<img class="bestseller-item" src="img/product4.jpg" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
@@ -205,7 +206,7 @@
 						<h2 class="visually-hidden">Рассылка</h2>
 						<p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </p>
 						<form class="newsletter-form" action="#" method="post">
-							<input type="text" name="e-mail" value="" id="newsletter" placeholder="Электронная почта">
+							<input type="email" name="e-mail" value="" id="newsletter" placeholder="Электронная почта">
 							<label for="newsletter" class="visually-hidden">Электронная почта</label>
 							<button class="button" type="submit">Отправить</button>
 						</form>
@@ -214,7 +215,7 @@
 				<section class="contact">
 					<h2 class="visually-hidden">Контакты</h2>
 					<img src="img/map.jpg" width="1200" height="430" alt="Адрес главного офиса и офлайн магазина: ул. Большая Конюшенная 19/8, Санкт-Петербург">
-					<div class="contact">
+					<div class="address">
 						<p>Адрес главного офиса и офлайн магазина:</p>
 						<p>
 							<b>ул. Большая Конюшенная 19/8, Санкт-Петербург</b>
@@ -222,8 +223,8 @@
 						<p>Для заказов по телефону:</p>
 						<a class="phone" href="tel:88124502525">8 812 450-25-25</a>
 						<p>(с 10 до 20 ежедневно)</p> 
-						<p class="button feedback-button">
-							<a href="feedback-form.html">Форма обратной связи</a>
+						<p>
+							<a href="feedback-form.html" class="button feedback-button">Форма обратной связи</a>
 						</p>
 					</div>
 				</section>
@@ -256,7 +257,7 @@
 				<div class="footer-documents">
 					<ul>
 						<li>
-							<a href="#">Для поставщиков</a>
+							<a href="#" class="suppliers">Для поставщиков</a>
 						</li>
 						<li>
 							<a href="#">О производстве</a>
@@ -276,7 +277,6 @@
 			</footer>
 			<section class="modal modal-feedback">
 				<h2>Мы обязательно вам ответим!</h2>
-				<p>Введите свой логин и пароль.</p>
 				<form class="feedback-form" action="#" method="post">
 					<p>
 						<input class="user-name" type="text" name="user-name" id="user-name" placeholder="Как вас зовут?">

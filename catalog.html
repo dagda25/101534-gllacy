@@ -3,8 +3,9 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Каталог Глейси</title>
+		<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&amp;subset=cyrillic" rel="stylesheet">
+		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/style.css">
-		<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
 	</head>
 	<body>
 		<div class="container">
@@ -15,7 +16,7 @@
 					</a>
 					<ul class="site-navigation">
 						<li>
-							<a href="#">Каталог</a>
+							<a href="#" class="navigation-active">Каталог</a>
 							<ul class="catalog-hover">
 								<li class="catalog-item-bold">
 									<a href="#">Новинки</a>
@@ -42,9 +43,11 @@
 						</li>
 					</ul>
 					<div class="search">
-						<label for="search"><span class="visually-hidden">Поиск</span></label>
+						<label for="search">
+							<span class="visually-hidden">Поиск</span>
+						</label>
 						<div class="modal modal-search">
-							<input type="text" name="search" id="search">
+							<input type="text" name="search" id="search" placeholder="Что ищем?">
 						</div>
 					</div>
 					<div class="login-link">
@@ -73,7 +76,9 @@
 						<div class="table-cart">
 							<table>
 								<tr>
-									<td class="cart-delete">x</td>
+									<td class="cart-delete">
+										<img class="image-cart-delete" src="img/cross-small.svg" width="11" height="11" alt="Удалить">
+									</td>
 									<td>
 										<img class="image-cart-item" src="img/smallproduct1.jpg" width="33" height="33" alt="Пломбир с апельсиновым джемом">
 									</td>
@@ -83,7 +88,9 @@
 									<td class="cart-total-price">300 руб.</td>              
 								</tr>
 								<tr>
-									<td class="cart-delete">x</td>
+									<td class="cart-delete">
+										<img class="image-cart-delete" src="img/cross-small.svg" width="11" height="11" alt="Удалить">
+									</td>
 									<td>
 										<img class="image-cart-item" src="img/smallproduct2.jpg" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада">
 									</td>
@@ -108,9 +115,9 @@
 							<a href="index.html">Главная</a>
 						</li>
 						<li>
-							<a>Каталог</a>
+							<a href="#">Каталог</a>
 						</li>
-						<li>Сливочное</li>
+						<li class="current-page">Сливочное</li>
 					</ul>
 				</nav>
 				<h1 class="catalog-name">Сливочное мороженое</h1>
@@ -154,6 +161,7 @@
 							<input type="checkbox" name="content" value="content5" id="content5">
 							<label for="content5">Джемы</label>
 						</fieldset>
+						<button>Применить</button>
 					</form>
 				</section>
 				<section class="catalog">
