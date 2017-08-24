@@ -1,6 +1,6 @@
 body {
 	margin: 0;
-  padding: 0;
+	padding: 0;
 
 	font-family: 'Roboto', Arial, sans-serif;
 	font-size: 16px;
@@ -12,18 +12,18 @@ body {
 }
 
 a {
-  text-decoration: none;
+	text-decoration: none;
 }
 
 .visually-hidden { 
-  position: absolute; 
-  overflow: hidden; 
-  clip: rect(0 0 0 0); 
-  height: 1px;
-  width: 1px; 
-  margin: -1px;
-  padding: 0;
-  border: 0; 
+	position: absolute; 
+	overflow: hidden; 
+	clip: rect(0 0 0 0); 
+	height: 1px;
+	width: 1px; 
+	margin: -1px;
+	padding: 0;
+	border: 0; 
 }
 
 .container {
@@ -97,9 +97,9 @@ a {
 
 .site-navigation a:hover,
 .site-navigation a:focus {
-  color: #333333;
+	color: #333333;
 
-  background-color: #ffffff;
+	background-color: #ffffff;
 }
 
 .catalog-hover a {
@@ -177,19 +177,19 @@ a {
 .button {
 	color: #ffffff;
 	background-image: linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
-  box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
+	box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
 }
 
 .button:hover,
 .button:focus {
 	color: #ffffff;
 	background-image: linear-gradient( 90deg, rgba(231,74,53,0.8) 0%, rgba(242,104,67,0.8) 100%);
-  box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.004);
+	box-shadow: 0px 2px 2px 0px rgb(172, 16, 0);
 }
 
 .button:active {
-  background-image: linear-gradient( 90deg, rgb(242,104,67) 0%, rgb(231,74,53) 100%);
-  box-shadow: inset 0px 2px 2px 0px rgba(148, 39, 24, 0.004);
+	background-image: linear-gradient( 90deg, rgb(242,104,67) 0%, rgb(231,74,53) 100%);
+	box-shadow: inset 0px 2px 2px 0px rgb(148, 39, 24);
 }
 
 .slider-button {
@@ -202,7 +202,7 @@ a {
 
 .special-offer-raspberry {
 	width: 560px;
-	height: 230px;
+	min-height: 230px;
 	border-radius: 15px;
 	background-image: url(../img/raspberry-bg.jpg);
 	background-repeat: no-repeat;
@@ -210,7 +210,7 @@ a {
 
 .special-offer-chocolate {
 	width: 560px;
-	height: 230px;
+	min-height: 230px;
 	border-radius: 15px;
 	background-image: url(../img/choco-bg.jpg);
 	background-repeat: no-repeat;
@@ -283,8 +283,8 @@ a {
 
 .about-us {
 	border-radius: 15px;
-	background-image: url(../img/pattern-bg.jpg);
-	background-repeat: repeat-x;
+	background-image: url(../img/pattern-bg1.jpg);
+	background-repeat: repeat;
 	background-color: rgb(237, 225, 200);
 }
 
@@ -326,7 +326,7 @@ a {
 
 .from-blog {
 	width: 560px;
-	height: 220px;
+	min-height: 220px;
 	background-color: #ffffff;
 	background-image: url(../img/strawberry-bg.jpg);
 	background-repeat: no-repeat;
@@ -338,12 +338,25 @@ a {
 }
 
 .newsletter {
+	position: relative;
 	width: 560px;
-	height: 220px;
+	min-height: 220px;
+
 	background-color: #ffffff;
-	background-image: url(../img/post-bg.jpg);
-	background-repeat: no-repeat;
+	background-image: url(../img/post-outer.jpg);
+	background-repeat: repeat;
 	border-radius: 15px;
+}
+
+.newsletter-inner {
+	position: absolute;
+	top: 0px;
+	width: 548px;
+	min-height: 208px;
+
+	margin: 6px;
+	background-color: #f8f7f4;
+	border-radius: 9px;
 }
 
 .newsletter-form input[type="email"] {
@@ -352,14 +365,14 @@ a {
 	line-height: 24px;
 	font-weight: 400;	
 
-  background-color: #ffffff;
-  border: 1px solid rgba(178, 178, 178, 0.52);
-  border-radius: 5px;
+	background-color: #ffffff;
+	border: 1px solid rgba(178, 178, 178, 0.52);
+	border-radius: 5px;
 }
 
 .address {
 	width: 303px;
-	height: 307px;
+	min-height: 307px;
 	background-color: #ffffff;	
 	border-radius: 15px;
 }
@@ -445,7 +458,7 @@ a {
 
 .modal-feedback{
 	width: 477px;
-	height: 442px;
+	min-height: 442px;
 
 	background-color: #f8f7f4;
 	border-radius: 5px;
@@ -473,9 +486,9 @@ a {
 	line-height: 24px;
 	font-weight: 400;	
 
-  background-color: #ffffff;
-  border: 1px solid rgba(178, 178, 178, 0.52);
-  border-radius: 5px;
+	background-color: #ffffff;
+	border: 1px solid rgba(178, 178, 178, 0.52);
+	border-radius: 5px;
 }
 
 .feedback-form input[type="text"]:focus,
@@ -500,7 +513,7 @@ a {
 
 .modal-login {
 	width: 278px;
-	height: 214px;
+	min-height: 214px;
 
 	background-color: #f8f7f4;
 	border-radius: 5px;	
@@ -513,9 +526,9 @@ a {
 	line-height: 24px;
 	font-weight: 400;	
 
-  background-color: #ffffff;
-  border: 1px solid rgba(178, 178, 178, 0.52);
-  border-radius: 5px;
+	background-color: #ffffff;
+	border: 1px solid rgba(178, 178, 178, 0.52);
+	border-radius: 5px;
 }
 
 .login-form input[type="password"]:focus,
@@ -568,9 +581,9 @@ a {
 	line-height: 24px;
 	font-weight: 400;	
 
-  background-color: #ffffff;
-  border: 1px solid rgba(178, 178, 178, 0.52);
-  border-radius: 5px;
+	background-color: #ffffff;
+	border: 1px solid rgba(178, 178, 178, 0.52);
+	border-radius: 5px;
 }
 
 .modal-search input[type="text"]:focus {
@@ -584,7 +597,7 @@ a {
 .feedback-form input:hover,
 .login-form input:hover,
 .modal-search input:hover {
-  border: 2px solid rgba(178, 178, 178, 0.52);
+	border: 2px solid rgba(178, 178, 178, 0.52);
 }
 
 .navigation-active {
@@ -598,7 +611,7 @@ a {
 
 .table-cart {
 	width: 540px;
-	height: 242px;
+	min-height: 242px;
 
 	background-color: #f8f7f4;
 	border-radius: 5px;
@@ -733,8 +746,8 @@ a {
 
 .filters button:active {
 	background-color: #ededed;
-  box-shadow: inset 0px 2px 1px 0px rgba(105, 105, 105, 0.004);
-  border: none;
+	box-shadow: inset 0px 2px 1px 0px rgb(105, 105, 105);
+	border: none;
 }
 
 .catalog-grid {
