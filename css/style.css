@@ -52,6 +52,7 @@ html {
 }
 
 .blog-title {
+	margin: 24px 0 0 20px;
 	font-size: 16px;
 	color: #323232;
 	line-height: 22px;
@@ -64,6 +65,11 @@ html {
 	margin-bottom: 40px;
 	margin-top: 42px;
 }
+
+.main-slider .slide {
+	padding-top: 30px;
+}
+
 
 .slide-input {
 	display: none;
@@ -136,7 +142,7 @@ html {
 .slide2,
 .slide3 {
 	position: absolute;
-	bottom: 51px;
+	bottom: 2px;
 	left: 223px;
 	width: 700px;
 	text-align: center;
@@ -653,11 +659,20 @@ margin-left: 3px;
 }
 
 .slider-button {
-	font-size: 42px;
+	display: block;
+	width: 278px;
+	height: 63px;
+	margin: 30px auto 0 auto;
+	padding-top: 10px;
+	font-size: 32px;
 	color: #ffffff;
 	line-height: 44px;
 	font-weight: 700;
-	text-align: center;		
+	text-align: center;	
+	border-radius: 32px;	
+	background-image: linear-gradient(to top, #e74a35 0%, #f26843 100%);
+	box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
+	text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76)
 }
 
 .special-offer-raspberry {
@@ -677,6 +692,8 @@ margin-left: 3px;
 }
 
 .special-offers h3 {
+	margin: 16px auto 0 20px;
+	padding: 0;
 	font-size: 35px;
 	color: #ffffff;
 	line-height: 41px;
@@ -684,6 +701,8 @@ margin-left: 3px;
 }
 
 .special-offers p {
+	margin: 15px 25px 0 20px;
+	padding: 0;
 	font-size: 18px;
 	color: #ffffff;
 	line-height: 22px;
@@ -700,6 +719,13 @@ margin-left: 3px;
 }
 
 .special-offer-button {
+	display: block;
+	height: 46px;
+	width: 165px;
+	margin: 43px 21px auto auto;
+	padding-top: 8px;      
+	text-align: center;
+	border-radius: 23px;
 	font-size: 18px;
 	color: #ffffff;
 	line-height: 24px;
@@ -744,14 +770,22 @@ margin-left: 3px;
 
 .bestsellers .measure,
 .catalog-grid .measure {
+	margin-left: -18px;
 	font-size: 30px;
 	color: #ffffff;
 	line-height: 45px;
 	font-weight: 700;
 }
 
+.bestseller-name,
+.product-name {
+	margin: 5px 0 0 0;
+	padding: 0;
+	text-align: center;
+}
 .bestseller-name a,
 .product-name a {
+	text-align: center;
 	font-size: 16px;
 	color: #ffffff;
 	line-height: 22px;
@@ -769,7 +803,16 @@ margin-left: 3px;
 
 .image-price .price {
 	position: absolute;
-	bottom: -20px;
+	bottom: -30px;
+	text-shadow: 1px 1px 3px rgba(49, 50, 53, 0.5);
+}
+
+.image-price svg {
+	position: relative;
+	bottom: -4px;
+	left: -8px;
+	margin: 0;
+	padding: 0;
 }
 
 .bestseller-name a:hover,
@@ -785,6 +828,7 @@ margin-left: 3px;
 .product-background {
 	display: none;
 	position: absolute;
+	z-index: 1;
 	top:-6px;
 	left: -13px;
 	width: 293px;
@@ -799,7 +843,23 @@ margin-left: 3px;
 	display: block;
 }
 
+.product-background .product-button {
+	display: block;
+	position: absolute;
+	z-index: 2;
+	bottom: 22px;
+	left: 50%;
+	transform: translateX(-50%);
+	box-sizing: border-box;
+	width: 200px;
+	height: 46px;
+	text-align: center;
+	padding-top: 10px;
+	border-radius: 21px;
+}
+
 .about-us {
+	margin-top: -3px;
 	margin-bottom: 40px;
 	border-radius: 15px;
 	background-image: url(../img/pattern-bg1.jpg);
@@ -808,6 +868,9 @@ margin-left: 3px;
 }
 
 .about-us-title {
+	margin-left: 21px;
+	padding-top: 25px;
+	margin-bottom: 25px;
 	font-size: 24px;
 	color: #323232;
 	line-height: 30px;
@@ -815,7 +878,64 @@ margin-left: 3px;
 }
 
 .about-us-list {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0;
+	padding: 0;
 	list-style: none;
+}
+
+.about-us-list li {
+	position: relative;
+	width: 492px;
+	margin-top: -2px;
+	margin-left: 76px;
+	padding-right: 10px;
+	padding-bottom: 24px;
+}
+
+.about-us-tehnology::before {
+	position: absolute;
+	content: "";
+	width: 49px;
+	height: 49px;
+	left: -56px;
+	top: -13px;
+	background-image: url(../img/ice-cream.svg);
+	background-repeat: no-repeat;
+}
+
+.about-us-partners::before {
+	position: absolute;
+	content: "";
+	width: 49px;
+	height: 49px;
+	left: -58px;
+	top: -13px;
+	background-image: url(../img/cow.svg);
+	background-repeat: no-repeat;
+}
+
+.about-us-production::before {
+	position: absolute;
+	content: "";
+	width: 49px;
+	height: 49px;
+	left: -56px;
+	top: -13px;
+	background-image: url(../img/eco.svg);
+	background-repeat: no-repeat;
+}
+
+.about-us-delivery::before {
+	position: absolute;
+	content: "";
+	width: 49px;
+	height: 49px;
+	left: -58px;
+	top: -13px;
+	background-image: url(../img/thermometer.svg);
+	background-repeat: no-repeat;
 }
 
 .blog-newsletter {
@@ -829,7 +949,12 @@ margin-left: 3px;
 	color: #323232;
 	line-height: 30px;
 	font-weight: 700;
-	border-bottom: 2px solid rgb(50, 50, 50);
+	text-decoration: underline;
+}
+
+.from-blog p {
+	margin: 3px 0 0 20px;
+	width: 290px;	
 }
 
 .from-blog a:hover,
@@ -839,7 +964,7 @@ margin-left: 3px;
 	color: #e84d37;
 	line-height: 30px;
 	font-weight: 700;
-	border-bottom: 2px solid rgb(232, 77, 55);
+	text-decoration: underline;
 }
 
 .from-blog {
