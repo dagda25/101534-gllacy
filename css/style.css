@@ -539,6 +539,7 @@ html {
 	font-weight: 700;	
 	border-radius: 23px;
 	outline: none;
+	border: none;
 }
  
 .login-form a {
@@ -799,6 +800,7 @@ margin-left: 3px;
 
 .image-price {
 	position: relative;
+	z-index: 5;
 }
 
 .image-price .price {
@@ -813,6 +815,16 @@ margin-left: 3px;
 	left: -8px;
 	margin: 0;
 	padding: 0;
+}
+
+.bestsellers-items > img {
+	z-index: 6;
+}
+
+.bestseller-name,
+.product-name {
+	position: relative;
+	z-index: 6;
 }
 
 .bestseller-name a:hover,
@@ -860,7 +872,7 @@ margin-left: 3px;
 
 .about-us {
 	margin-top: -3px;
-	margin-bottom: 40px;
+	margin-bottom: 38px;
 	border-radius: 15px;
 	background-image: url(../img/pattern-bg1.jpg);
 	background-repeat: repeat;
@@ -977,6 +989,7 @@ margin-left: 3px;
 }
 
 .newsletter p {
+	margin: 28px 10px 0 22px;
 	color: #5a5a5a;
 }
 
@@ -986,7 +999,7 @@ margin-left: 3px;
 	min-height: 220px;
 
 	background-color: #ffffff;
-	background-image: url(../img/post-outer.jpg);
+	background-image: url(../img/bg-post.svg);
 	background-repeat: repeat;
 	border-radius: 15px;
 }
@@ -1003,6 +1016,12 @@ margin-left: 3px;
 }
 
 .newsletter-form input[type="email"] {
+	display: inline-block;
+	margin-left: 22px;
+	margin-top: 36px;
+	padding-left: 12px;
+	width: 368px;
+	height: 44px;
 	font-size: 16px;
 	color: #999999;
 	line-height: 24px;
@@ -1013,10 +1032,36 @@ margin-left: 3px;
 	border-radius: 5px;
 }
 
+.newsletter button {
+	display: inline-block;
+	width: 129px;
+	height: 44px;
+	margin-left: 7px;
+	padding-bottom: 12px;
+	padding-top: 9px;
+	vertical-align: middle;
+	color: #fff;
+	font-weight: 700;
+	border-radius: 23px;
+	border: none;
+	outline: none;
+}
+
 .contact {
 	width: 1200px;
 	margin: 0 auto;
 	position: relative;
+}
+
+.contact::before {
+	position: absolute;
+	left: 266px;
+	top: 140px;
+	content: "";
+	width: 80px;
+	height: 140px;
+	background-image: url(../img/pin.svg);
+	background-repeat: no-repeat;
 }
 
 .address {
@@ -1025,15 +1070,27 @@ margin-left: 3px;
 	right: 27px;
 	width: 303px;
 	min-height: 307px;
+	padding: 30px 25px;
 	background-color: #ffffff;	
 	border-radius: 15px;
 }
 
 .address p {
+	margin:0;
+	margin-bottom: 0px;
+	padding:0;
 	font-size: 14px;
 	color: #323232;
 	line-height: 20px;
 	font-weight: 400;
+}
+
+.address .address-city {
+	margin-bottom: 18px;
+}
+
+.address .for-orders {
+	margin-bottom: 5px;
 }
 
 .address b {
@@ -1050,6 +1107,10 @@ margin-left: 3px;
 	font-weight: 700;
 }
 
+.address .open {
+	margin-bottom: 25px;
+}
+
 .address .phone:hover,
 .address .phone:focus,
 .address .phone:active {
@@ -1057,25 +1118,35 @@ margin-left: 3px;
 }
 
 .feedback-button {
+	display: block;
+	width: 252px;
+	height: 46px;
+	padding-top: 10px;
+	text-align: center;
 	font-size: 18px;
 	line-height: 24px;
 	font-weight: 700;	
+	border-radius: 23px;
+	outline: none;
 }
 
 .main-footer {
 	display: flex;
 	justify-content: space-between;
 	min-height: 105px;
-	padding-top: 36px;
+	padding-top: 26px;
 }
 
 .footer-social ul {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+	flex-wrap: wrap;
 	min-width: 185px;
 	list-style: none;
 	margin: 0;
+	margin-top: 6px;
+	margin-left: 2px;
 	padding: 0;
 }
 
@@ -1083,10 +1154,17 @@ margin-left: 3px;
 	position: relative;
 }
 
+.footer-social a {
+	width: 32px;
+	height: 32px;
+	box-sizing: content-box;
+	border: 2px solid rgba(255, 255, 255, 0.7);
+}
+
 .footer-social svg {
 	position: absolute;
-	top: -1px;
-	left: -1px;
+	top: 2px;
+	left: 2px;
 }
 
 .social-button {
@@ -1101,23 +1179,37 @@ margin-left: 3px;
 .social-button:hover,
 .social-button:focus {
 	fill: #fff;
-	border: 3px solid rgba(255, 255, 255, 0.7);
+	border: 2px solid rgba(255, 255, 255, 0.7);
 }
 
 .social-button:active {
 	fill: #e9e9e9;
-	border: 3px solid #e9e9e9;
+	border: 2px solid #e9e9e9;
 }
 
 .footer-documents ul {
 	display: flex;
-	justify-content: space-between;
+	justify-content: flex-start;
 	align-items: center;
 	flex-wrap: wrap;
-	width: 300px;
+	width: 330px;
 	margin: 0;
+	margin-top: -2px;
 	padding: 0;
 	list-style: none;
+}
+
+.footer-documents li {
+	position: relative;
+	width: 50%;
+}
+
+.footer-documents li:nth-child(2n-1) {
+	left: 15px;
+}
+
+.footer-documents li:nth-child(2n) {
+	left: -5px;
 }
 
 .footer-documents a {
@@ -1136,17 +1228,24 @@ margin-left: 3px;
 }
 
 .footer-documents .suppliers {
+	position: relative;
 	font-weight: 700;
 }
 
-
-.footer-documents {
-	min-width: 320px;
+.footer-documents .suppliers::before {
+	position: absolute;
+	content: "";
+	top: 2px;
+	left: -20px;
+	width: 15px;
+	height: 13px;
+	background-image: url(../img/heart.svg)
 }
+
 
 .footer-copyright {
 	position: relative;
-	width: 267px;
+	width: 192px;
 	margin-top: 30px;
 	text-align: right;
 	font-size: 12px;
@@ -1174,31 +1273,64 @@ margin-left: 3px;
 }
 
 .modal-feedback {
-	display: none;
-	width: 477px;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 447px;
 	min-height: 442px;
-
+	margin: 0 auto;
+	padding: 20px 25px 27px;
 	background-color: #f8f7f4;
-	border-radius: 5px;
+	border-radius: 15px;
 }
 
 .modal-feedback h2 {
+	margin: 0;
+	padding: 0;
 	font-size: 24px;
 	color: #323232;
 	line-height: 28px;
 	font-weight: 500;	
 }
 
+.modal-feedback .modal-close {
+	position: absolute;
+	top: 15px;
+	right: 15px;
+	display: block;
+	width: 17px;
+	height: 18px;
+	border: none;
+	background: url(../img/cross-big.svg) no-repeat;
+}
+
+.feedback-form {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 355px;
+}
+
 .feedback-form button {
+	align-self: flex-end;
+	width: 139px;	
+	height: 46px;
+	padding-bottom: 10px;
+	padding-top: 8px;
 	font-size: 18px;
 	color: #ffffff;
 	line-height: 24px;
 	font-weight: 700;	
-}
+	border-radius: 23px;
+	outline: none;
+	border: none;
+	}
 
 .feedback-form input[type="text"],
 .feedback-form input[type="email"],
 .feedback-form textarea {
+	padding-left: 15px;
 	font-size: 16px;
 	color: #999999;
 	line-height: 24px;
@@ -1225,8 +1357,14 @@ margin-left: 3px;
 }
 
 .feedback-form textarea {
-	width: 429px;
-	height: 155px;	
+	height: 155px;
+	width: 397px;
+	padding-top: 15px;	
+}
+
+.feedback-form p {
+	margin: 0;
+	padding: 0;
 }
 
 .newsletter-form input:hover,
