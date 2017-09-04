@@ -53,7 +53,10 @@
 							</svg>
 						</div>
 						<div class="modal modal-search">
-							<input type="text" name="search" id="search" placeholder="Что ищем?">
+							<input type="text" name="search" id="search" placeholder="">
+							<div class="pseudo">
+								<label class="pseudo-placeholder" for="search">Что ищем?</label>
+							</div>
 						</div>
 					</div>
 					<div class="login-link">
@@ -69,15 +72,15 @@
 						</a>
 						<div class="modal modal-login">
 							<h2 class="visually-hidden">Авторизация</h2>
-							<form class="login-form" action="#" method="post">
-								<p>
-									<input class="login-email" type="email" name="e-mail" id="e-mail" placeholder="Электронная почта">
-									<label for="e-mail" class="visually-hidden">Электронная почта</label>
-								</p>
-								<p>
-									<input class="login-password" type="password" name="password" id="password" placeholder="Пароль">
-									<label for="password" class="visually-hidden">Пароль</label>
-								</p>
+							<form class="login-form" action="#" method="post">								
+								<input class="login-email" type="email" name="e-mail" id="e-mail" placeholder="">
+								<div class="pseudo">
+									<label class="pseudo-placeholder" for="e-mail">Электронная почта</label>
+								</div>
+								<input class="login-password" type="password" name="password" id="password" placeholder="">
+								<div class="pseudo">
+									<label class="pseudo-placeholder" for="password">Пароль</label>
+								</div>									
 								<div class="login-form-bottom">
 									<button class="button" type="submit">Войти</button>
 									<p class="login-password-info">
@@ -86,7 +89,7 @@
 									</p>
 								</div>
 							</form>
-						</div>	        
+						</div>	     
 					</div>
 					<div class="cart full-cart">
 						<a href="#" class="cart-link">
@@ -183,19 +186,19 @@
 								<label for="fatness4">выше 30%</label>
 							</div>
 						</fieldset>
-						<fieldset>
+						<fieldset class="content">
 							<legend>Наполнители:</legend>
 							<div class="content-wrapper">
 								<input type="checkbox" name="content" value="content1" id="content1" checked>
-								<label for="content1">Шоколадные</label>
+								<label for="content1">шоколадные</label>
 								<input type="checkbox" name="content" value="content2" id="content2" checked>
-								<label for="content2">Сахарные присыпки</label>
+								<label for="content2">сахарные присыпки</label>
 								<input type="checkbox" name="content" value="content3" id="content3">
-								<label for="content3">Фрукты</label>
+								<label for="content3">фрукты</label>
 								<input type="checkbox" name="content" value="content4" id="content4">
-								<label for="content4">Сиропы</label>
+								<label for="content4">сиропы</label>
 								<input type="checkbox" name="content" value="content5" id="content5">
-								<label for="content5">Джемы</label>
+								<label for="content5">джемы</label>
 							</div>
 						</fieldset>
 						<button>Применить</button>
@@ -443,7 +446,7 @@
 							<div class="product-background">
 								<a href="#" class="button product-button">Быстрый просмотр</a>
 							</div> 
-						</li>         
+						</li>           
 					</ul>
 				</section>
 				<nav class="pagination">

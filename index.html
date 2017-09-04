@@ -57,7 +57,10 @@
 								</svg>
 							</div>
 							<div class="modal modal-search">
-								<input type="text" name="search" id="search" placeholder="Что ищем?">
+								<input type="text" name="search" id="search" placeholder="">
+								<div class="pseudo">
+									<label class="pseudo-placeholder" for="search">Что ищем?</label>
+								</div>
 							</div>
 						</div>
 						<div class="login-link">
@@ -73,15 +76,15 @@
 							</a>
 							<div class="modal modal-login">
 								<h2 class="visually-hidden">Авторизация</h2>
-								<form class="login-form" action="#" method="post">
-									<p>
-										<input class="login-email" type="email" name="e-mail" id="e-mail" placeholder="Электронная почта">
-										<label for="e-mail" class="visually-hidden">Электронная почта</label>
-									</p>
-									<p>
-										<input class="login-password" type="password" name="password" id="password" placeholder="Пароль">
-										<label for="password" class="visually-hidden">Пароль</label>
-									</p>
+								<form class="login-form" action="#" method="post">								
+									<input class="login-email" type="email" name="e-mail" id="e-mail" placeholder="">
+									<div class="pseudo">
+										<label class="pseudo-placeholder" for="e-mail">Электронная почта</label>
+									</div>
+									<input class="login-password" type="password" name="password" id="password" placeholder="">
+									<div class="pseudo">
+										<label class="pseudo-placeholder" for="password">Пароль</label>
+									</div>									
 									<div class="login-form-bottom">
 										<button class="button" type="submit">Войти</button>
 										<p class="login-password-info">
@@ -112,8 +115,8 @@
 					</div>
 				</header>
 			</div>
-			<div class="container">
-				<main> 
+			<main> 
+				<div class="container">				
 					<h1 class="visually-hidden">Магазин мороженого Gllasy Shop</h1>
 					<section class="main-slider">
 						<div class="slide slide1">						
@@ -153,7 +156,7 @@
 						<h2 class="visually-hidden">Хиты продаж</h2>
 						<ul class="bestsellers-list">
 							<li class="bestsellers-items">
-								<img class="bestseller-label" src="img/hit.svg" alt="Хит" width="61px" height="61px">
+								<img class="bestseller-label" src="img/hit.svg" alt="Хит" width="61" height="61">
 								<div class="image-price">
 									<a href="#" title="Сливочное с апельсиновым джемом и цитрусовой стружкой">
 										<img class="bestseller-item" src="img/product1.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
@@ -174,7 +177,7 @@
 								</div> 								
 							</li>
 							<li class="bestsellers-items">
-								<img class="bestseller-label" src="img/hit.svg" alt="Хит" width="61px" height="61px">
+								<img class="bestseller-label" src="img/hit.svg" alt="Хит" width="61" height="61">
 								<div class="image-price">
 									<a href="#" title="Сливочно-кофейное с кусочками шоколада">
 										<img class="bestseller-item" src="img/product2.jpg" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
@@ -195,7 +198,7 @@
 								</div>								
 							</li>
 							<li class="bestsellers-items">
-								<img class="bestseller-label" src="img/hit.svg" alt="Хит" width="61px" height="61px">
+								<img class="bestseller-label" src="img/hit.svg" alt="Хит" width="61" height="61">
 								<div class="image-price">
 									<a href="#" title="Сливочно-клубничное с присыпкой из белого шоколада">
 										<img class="bestseller-item" src="img/product3.jpg" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
@@ -216,7 +219,7 @@
 								</div>								
 							</li>
 							<li class="bestsellers-items">
-								<img class="bestseller-label" src="img/hit.svg" alt="Хит" width="61px" height="61px">
+								<img class="bestseller-label" src="img/hit.svg" alt="Хит" width="61" height="61">
 								<div class="image-price">
 									<a href="#" title="Сливочное крем-брюле с карамельной подливкой">
 										<img class="bestseller-item" src="img/product4.jpg" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
@@ -267,31 +270,33 @@
 								<h2 class="visually-hidden">Рассылка</h2>
 								<p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </p>
 								<form class="newsletter-form" action="#" method="post">
-									<input type="email" name="e-mail" value="" id="newsletter" placeholder="Электронная почта">
-									<label for="newsletter" class="visually-hidden">Электронная почта</label>
+									<input type="email" name="newsletter" value="" id="newsletter" placeholder="">
+									<div class="pseudo">
+										<label class="pseudo-placeholder" for="newsletter">Электронная почта</label>
+									</div>
 									<button class="button" type="submit">Отправить</button>
 								</form>
 							</div>
 						</section>
 					</div>
 				</div>
-					<section class="contact">
-						<h2 class="visually-hidden">Контакты</h2>
-						<img src="img/map.jpg" width="1200" height="430" alt="Адрес главного офиса и офлайн магазина: ул. Большая Конюшенная 19/8, Санкт-Петербург">
-						<div class="address">
-							<p class="address-text">Адрес главного офиса<br> и офлайн магазина:</p>
-							<p class="address-city">
-								<b>ул. Большая Конюшенная 19/8, Санкт-Петербург</b>
-							</p>
-							<p class="for-orders">Для заказов по телефону:</p>
-							<a class="phone" href="tel:88124502525">8 812 450-25-25</a>
-							<p class="open">(с 10 до 20 ежедневно)</p> 
-							<p>
-								<a href="feedback-form.html" class="button feedback-button">Форма обратной связи</a>
-							</p>
-						</div>
-					</section>
-				</main>
+				<section class="contact">
+					<h2 class="visually-hidden">Контакты</h2>
+					<img src="img/map.jpg" width="1200" height="428" alt="Адрес главного офиса и офлайн магазина: ул. Большая Конюшенная 19/8, Санкт-Петербург">
+					<div class="address">
+						<p class="address-text">Адрес главного офиса<br> и офлайн магазина:</p>
+						<p class="address-city">
+							<b>ул. Большая Конюшенная 19/8, Санкт-Петербург</b>
+						</p>
+						<p class="for-orders">Для заказов по телефону:</p>
+						<a class="phone" href="tel:88124502525">8 812 450-25-25</a>
+						<p class="open">(с 10 до 20 ежедневно)</p> 
+						<p>
+							<a href="feedback-form.html" class="button feedback-button">Форма обратной связи</a>
+						</p>
+					</div>
+				</section>
+			</main>
 			<div class="container">
 				<footer class="main-footer">
 					<div class="footer-social">
@@ -370,17 +375,18 @@
 				<section class="modal modal-feedback">
 					<h2>Мы обязательно вам ответим!</h2>
 					<form class="feedback-form" action="#" method="post">
-						<p>
-							<input class="user-name" type="text" name="user-name" id="user-name" placeholder="Как вас зовут?">
-							<label for="user-name" class="visually-hidden">Как вас зовут?</label>
-						</p>
-						<p>
-							<input class="user-email" type="email" name="user-email" id="user-email" placeholder="Ваша почта для ответа?">
-							<label for="user-email" class="visually-hidden">Ваша почта для ответа?</label>
-						</p>
-						<p>
-							<textarea class="user-message" name="user-message" rows="7" cols="30">Напишите что-нибудь...</textarea>
-						</p>
+						<input class="user-name" type="text" name="user-name" id="user-name" placeholder="">
+						<div class="pseudo">
+							<label class="pseudo-placeholder" for="user-name">Как вас зовут?</label>
+						</div>
+						<input class="user-email" type="email" name="user-email" id="user-email" placeholder="">
+						<div class="pseudo">
+							<label class="pseudo-placeholder" for="user-email">Ваша почта для ответа?</label>
+						</div>
+						<textarea class="user-message" name="user-message" id="user-message" rows="7" cols="30"></textarea>
+						<div class="pseudo">
+							<label class="pseudo-placeholder" for="user-message">Напишите что-нибудь...</label>
+						</div>
 						<button class="button" type="submit">Отправить</button>
 					</form>
 					<button class="modal-close" type="button">
