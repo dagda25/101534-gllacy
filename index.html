@@ -57,7 +57,7 @@
 								</svg>
 							</div>
 							<div class="modal modal-search">
-								<input type="text" name="search" id="search" placeholder="">
+								<input type="text" name="search" id="search" placeholder="" required>
 								<div class="pseudo">
 									<label class="pseudo-placeholder" for="search">Что ищем?</label>
 								</div>
@@ -77,11 +77,11 @@
 							<div class="modal modal-login">
 								<h2 class="visually-hidden">Авторизация</h2>
 								<form class="login-form" action="#" method="post">								
-									<input class="login-email" type="email" name="e-mail" id="e-mail" placeholder="">
+									<input class="login-email" type="text" name="e-mail" id="e-mail" placeholder="" required>
 									<div class="pseudo">
 										<label class="pseudo-placeholder" for="e-mail">Электронная почта</label>
 									</div>
-									<input class="login-password" type="password" name="password" id="password" placeholder="">
+									<input class="login-password" type="password" name="password" id="password" placeholder="" required>
 									<div class="pseudo">
 										<label class="pseudo-placeholder" for="password">Пароль</label>
 									</div>									
@@ -270,7 +270,7 @@
 								<h2 class="visually-hidden">Рассылка</h2>
 								<p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </p>
 								<form class="newsletter-form" action="#" method="post">
-									<input type="email" name="newsletter" value="" id="newsletter" placeholder="">
+									<input type="text" name="newsletter" value="" id="newsletter" placeholder="" required>
 									<div class="pseudo">
 										<label class="pseudo-placeholder" for="newsletter">Электронная почта</label>
 									</div>
@@ -283,6 +283,7 @@
 				<section class="contact">
 					<h2 class="visually-hidden">Контакты</h2>
 					<img src="img/map.jpg" width="1200" height="428" alt="Адрес главного офиса и офлайн магазина: ул. Большая Конюшенная 19/8, Санкт-Петербург">
+					<iframe class="yandex-map" src="https://yandex.ru/map-widget/v1/-/CBUZuNeb3D" width="1200" height="428" frameborder="4"></iframe>
 					<div class="address">
 						<p class="address-text">Адрес главного офиса<br> и офлайн магазина:</p>
 						<p class="address-city">
@@ -373,27 +374,30 @@
 					</p>     
 				</footer>
 				<section class="modal modal-feedback">
-					<h2>Мы обязательно вам ответим!</h2>
-					<form class="feedback-form" action="#" method="post">
-						<input class="user-name" type="text" name="user-name" id="user-name" placeholder="">
-						<div class="pseudo">
-							<label class="pseudo-placeholder" for="user-name">Как вас зовут?</label>
-						</div>
-						<input class="user-email" type="email" name="user-email" id="user-email" placeholder="">
-						<div class="pseudo">
-							<label class="pseudo-placeholder" for="user-email">Ваша почта для ответа?</label>
-						</div>
-						<textarea class="user-message" name="user-message" id="user-message" rows="7" cols="30"></textarea>
-						<div class="pseudo">
-							<label class="pseudo-placeholder" for="user-message">Напишите что-нибудь...</label>
-						</div>
-						<button class="button" type="submit">Отправить</button>
-					</form>
-					<button class="modal-close" type="button">
-						<span class="visually-hidden">Закрыть</span>
-					</button>
+					<div>
+						<h2>Мы обязательно вам ответим!</h2>
+						<form class="feedback-form" action="#" method="post">
+							<input class="user-name" type="text" name="user-name" id="user-name" placeholder="" required>
+							<div class="pseudo">
+								<label class="pseudo-placeholder" for="user-name">Как вас зовут?</label>
+							</div>
+							<input class="user-email" type="text" name="user-email" id="user-email" placeholder="" required>
+							<div class="pseudo">
+								<label class="pseudo-placeholder" for="user-email">Ваша почта для ответа?</label>
+							</div>
+							<textarea class="user-message" name="user-message" id="user-message" rows="7" cols="30" required></textarea>
+							<div class="pseudo">
+								<label class="pseudo-placeholder" for="user-message">Напишите что-нибудь...</label>
+							</div>
+							<button class="button" type="submit">Отправить</button>
+						</form>
+						<button class="modal-close" type="button">
+							<span class="visually-hidden">Закрыть</span>
+						</button>
+					</div>
 				</section>  
 			</div> 
 		</div>
+		<script src="js/script.js"></script>
 	</body>
 </html>
