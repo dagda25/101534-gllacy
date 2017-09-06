@@ -77,7 +77,7 @@
 							<div class="modal modal-login">
 								<h2 class="visually-hidden">Авторизация</h2>
 								<form class="login-form" action="#" method="post">								
-									<input class="login-email" type="text" name="e-mail" id="e-mail" placeholder="" required>
+									<input class="login-email" type="email" name="e-mail" id="e-mail" placeholder="" required>
 									<div class="pseudo">
 										<label class="pseudo-placeholder" for="e-mail">Электронная почта</label>
 									</div>
@@ -270,7 +270,7 @@
 								<h2 class="visually-hidden">Рассылка</h2>
 								<p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </p>
 								<form class="newsletter-form" action="#" method="post">
-									<input type="text" name="newsletter" value="" id="newsletter" placeholder="" required>
+									<input type="email" name="newsletter" value="" id="newsletter" placeholder="" required>
 									<div class="pseudo">
 										<label class="pseudo-placeholder" for="newsletter">Электронная почта</label>
 									</div>
@@ -282,19 +282,23 @@
 				</div>
 				<section class="contact">
 					<h2 class="visually-hidden">Контакты</h2>
-					<img src="img/map.jpg" width="1200" height="428" alt="Адрес главного офиса и офлайн магазина: ул. Большая Конюшенная 19/8, Санкт-Петербург">
-					<iframe class="yandex-map" src="https://yandex.ru/map-widget/v1/-/CBUZuNeb3D" width="1200" height="428" frameborder="4"></iframe>
-					<div class="address">
-						<p class="address-text">Адрес главного офиса<br> и офлайн магазина:</p>
-						<p class="address-city">
-							<b>ул. Большая Конюшенная 19/8, Санкт-Петербург</b>
-						</p>
-						<p class="for-orders">Для заказов по телефону:</p>
-						<a class="phone" href="tel:88124502525">8 812 450-25-25</a>
-						<p class="open">(с 10 до 20 ежедневно)</p> 
-						<p>
-							<a href="feedback-form.html" class="button feedback-button">Форма обратной связи</a>
-						</p>
+					<div class="image-map">
+						<img src="img/map.jpg" width="1200" height="428" alt="Адрес главного офиса и офлайн магазина: ул. Большая Конюшенная 19/8, Санкт-Петербург">
+					</div>
+					<iframe class="yandex-map" src="https://yandex.ru/map-widget/v1/-/CBU6VGgtCA" width="1200" height="428"></iframe>
+					<div class="address-wrapper">
+						<div class="address">
+							<p class="address-text">Адрес главного офиса<br> и офлайн магазина:</p>
+							<p class="address-city">
+								<b>ул. Большая Конюшенная 19/8, Санкт-Петербург</b>
+							</p>
+							<p class="for-orders">Для заказов по телефону:</p>
+							<a class="phone" href="tel:88124502525">8 812 450-25-25</a>
+							<p class="open">(с 10 до 20 ежедневно)</p> 
+							<p>
+								<a href="feedback-form.html" class="button feedback-button">Форма обратной связи</a>
+							</p>
+						</div>
 					</div>
 				</section>
 			</main>
@@ -381,7 +385,7 @@
 							<div class="pseudo">
 								<label class="pseudo-placeholder" for="user-name">Как вас зовут?</label>
 							</div>
-							<input class="user-email" type="text" name="user-email" id="user-email" placeholder="" required>
+							<input class="user-email" type="email" name="user-email" id="user-email" placeholder="" required>
 							<div class="pseudo">
 								<label class="pseudo-placeholder" for="user-email">Ваша почта для ответа?</label>
 							</div>
