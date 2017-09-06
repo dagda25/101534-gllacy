@@ -807,12 +807,12 @@ margin-left: 3px;
 	font-weight: 700;
 }
 
-.special-offer-raspberry .special-offer-button {
-	width: 165px;
-}
-
 .special-offer-chocolate .special-offer-button {
 	width: 189px;
+}
+
+.special-offer-raspberry .special-offer-button {
+	width: 165px;
 }
 
 .bestsellers-list {
