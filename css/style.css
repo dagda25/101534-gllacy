@@ -445,35 +445,35 @@ html {
 
 .modal-search .pseudo-placeholder {
 	position: absolute;
-  top: -55px;
-  left: 30px;
-  color: rgb(153, 153, 153);
-  font-size: 16px;
-  line-height: 24px;
-  transition-duration: 0.3s;
-  cursor: text;
+	top: -55px;
+	left: 30px;
+	color: rgb(153, 153, 153);
+	font-size: 16px;
+	line-height: 24px;
+	transition-duration: 0.3s;
+	cursor: text;
 }
 
 .login-form .pseudo-placeholder {
 	position: absolute;
-  top: -50px;
-  left: 15px;
-  color: rgb(153, 153, 153);
-  font-size: 16px;
-  line-height: 24px;
-  transition-duration: 0.3s;
-  cursor: text;
+	top: -50px;
+	left: 15px;
+	color: rgb(153, 153, 153);
+	font-size: 16px;
+	line-height: 24px;
+	transition-duration: 0.3s;
+	cursor: text;
 }
 
 .newsletter-form .pseudo-placeholder {
 	position: absolute;
-  top: 5px;
-  left: -370px;
-  color: rgb(153, 153, 153);
-  font-size: 16px;
-  line-height: 24px;
-  transition-duration: 0.3s;
-  cursor: text;
+	top: 5px;
+	left: -370px;
+	color: rgb(153, 153, 153);
+	font-size: 16px;
+	line-height: 24px;
+	transition-duration: 0.3s;
+	cursor: text;
 }
 
 .modal-search input:focus ~ .pseudo .pseudo-placeholder,
@@ -484,9 +484,9 @@ html {
 .newsletter-form input:required:valid ~ .pseudo .pseudo-placeholder
  {
 	font-size: 11px;
-  line-height: 13px;
-  color: rgb(91, 157, 223);
-  transform: translateY(-22px);
+	line-height: 13px;
+	color: rgb(91, 157, 223);
+	transform: translateY(-22px);
 }
 
 .search-block:after {
@@ -721,8 +721,11 @@ margin-left: 3px;
 .button:hover,
 .button:focus {
 	color: #ffffff;
-	background-image: linear-gradient( 90deg, rgba(231,74,53,0.8) 0%, rgba(242,104,67,0.8) 100%);
-	box-shadow: 0px 2px 2px 0px rgb(172, 16, 0);
+	background-image: -webkit-linear-gradient(bottom, #ec6e5d 0%, #f58669 100%);
+	background-image: -o-linear-gradient(bottom, #ec6e5d 0%, #f58669 100%);
+	background-image: linear-gradient(to top, #ec6e5d 0%, #f58669 100%);
+	-webkit-box-shadow: 0 1px 2px #ac1000;
+	box-shadow: 0 1px 2px #ac1000;
 }
 
 .button:active {
@@ -1393,7 +1396,7 @@ margin-left: 3px;
 	z-index: 11;
 	top: 100px;
 	left:50%;
-  margin-left:-223px; 
+	margin-left:-223px; 
 }
 
 .modal-feedback-visible {
@@ -1402,7 +1405,7 @@ margin-left: 3px;
 }
 
 .modal-error {
-  animation: shake 0.6s;
+	animation: shake 0.6s;
 }
 
 .modal-feedback > div {
@@ -1498,64 +1501,64 @@ margin-left: 3px;
 
 .feedback-form input + .pseudo .pseudo-placeholder {
 	position: absolute;
-  top: -45px;
-  left: 15px;
-  color: rgb(153, 153, 153);
-  font-size: 16px;
-  line-height: 24px;
-  transition-duration: 0.3s;
-  cursor: text;
+	top: -45px;
+	left: 15px;
+	color: rgb(153, 153, 153);
+	font-size: 16px;
+	line-height: 24px;
+	transition-duration: 0.3s;
+	cursor: text;
 }
 
 .feedback-form textarea + .pseudo .pseudo-placeholder {
 	position: absolute;
-  top: -158px;
-  left: 15px;
-  color: rgb(153, 153, 153);
-  font-size: 16px;
-  line-height: 24px;
-  transition-duration: 0.3s;
-  cursor: text;
+	top: -158px;
+	left: 15px;
+	color: rgb(153, 153, 153);
+	font-size: 16px;
+	line-height: 24px;
+	transition-duration: 0.3s;
+	cursor: text;
 }
 
 @keyframes bounce {
-  0% {
-    transform: translateY(-2000px);
-  }
+	0% {
+		transform: translateY(-2000px);
+	}
 
-  70% {
-    transform: translateY(30px);
-  }
+	70% {
+		transform: translateY(30px);
+	}
 
-  90% {
-    transform: translateY(-10px);
-  }
+	90% {
+		transform: translateY(-10px);
+	}
 
-  100% {
-    transform: translateY(0);
-  }
+	100% {
+		transform: translateY(0);
+	}
 }
 
 @keyframes shake {
-  0%,
-  100% {
-    transform: translateX(0);
-  }
+	0%,
+	100% {
+		transform: translateX(0);
+	}
 
-  10%,
-  30%,
-  50%,
-  70%,
-  90% {
-    transform: translateX(-10px);
-  }
+	10%,
+	30%,
+	50%,
+	70%,
+	90% {
+		transform: translateX(-10px);
+	}
 
-  20%,
-  40%,
-  60%,
-  80% {
-    transform: translateX(10px);
-  }
+	20%,
+	40%,
+	60%,
+	80% {
+		transform: translateX(10px);
+	}
 }
 
 .feedback-form input:focus + .pseudo .pseudo-placeholder,
@@ -1564,9 +1567,9 @@ margin-left: 3px;
 .feedback-form textarea:required:valid + .pseudo .pseudo-placeholder
  {
 	font-size: 11px;
-  line-height: 13px;
-  color: rgb(91, 157, 223);
-  transform: translateY(-22px);
+	line-height: 13px;
+	color: rgb(91, 157, 223);
+	transform: translateY(-22px);
 }
 
 .newsletter-form input:hover,
@@ -1827,9 +1830,9 @@ tr:last-child .cart-product-name {
 	font-weight: 600;
 	border: none;
 	outline: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
 	background-image: url(../img/select-arrow.svg);
 	background-repeat: no-repeat;
 	background-position: 170px center;
@@ -1838,7 +1841,7 @@ tr:last-child .cart-product-name {
 }
 
 .filters select::-ms-expand {
-    display: none;
+		display: none;
 }
 
 .filters select:hover {
